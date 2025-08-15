@@ -1,0 +1,75 @@
+{
+  "manifest_version": 1,
+  "name": "表达方式管理插件 (Expression Manager Plugin)",
+  "version": "1.0.0",
+  "description": "管理麦麦的表达方式，支持添加、删除、修改和查看表达方式",
+  "author": {
+    "name": "SengokuCola",
+    "url": "https://github.com/MaiM-with-u"
+  },
+  "license": "GPL-v3.0-or-later",
+  
+  "host_application": {
+    "min_version": "0.10.0"
+  },
+  "homepage_url": "https://github.com/MaiM-with-u/maibot",
+  "repository_url": "https://github.com/MaiM-with-u/maibot",
+  "keywords": ["expression", "management", "admin", "style", "grammar"],
+  "categories": ["Management", "Admin"],
+  
+  "default_locale": "zh-CN",
+  "locales_path": "_locales",
+  
+  "plugin_info": {
+    "is_built_in": false,
+    "plugin_type": "management",
+    "components": [
+      {
+        "type": "command",
+        "name": "add_expression",
+        "description": "添加新的表达方式"
+      },
+      {
+        "type": "command",
+        "name": "list_expressions",
+        "description": "列举表达方式（支持翻页）"
+      },
+      {
+        "type": "command",
+        "name": "delete_expression",
+        "description": "删除指定的表达方式"
+      },
+      {
+        "type": "command",
+        "name": "modify_expression_weight",
+        "description": "修改表达方式的权重"
+      },
+      {
+        "type": "command",
+        "name": "review_expressions",
+        "description": "查看表达方式使用记录"
+      },
+      {
+        "type": "command",
+        "name": "learn_expression",
+        "description": "学习表达方式"
+      },
+      {
+        "type": "command",
+        "name": "analyze_message_expression",
+        "description": "分析消息表达方式"
+      }
+    ],
+    "features": [
+      "添加表达方式（语言风格和句法特点）",
+      "分页列举表达方式",
+      "删除表达方式",
+      "修改表达方式权重",
+      "支持按群组管理",
+      "查看表达方式使用记录",
+      "学习表达方式",
+      "分析消息表达方式"
+    ]
+  }
+}
+
